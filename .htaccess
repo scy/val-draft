@@ -1,0 +1,10 @@
+AddDefaultCharset utf-8
+AddCharset utf-8 .html .php .css .js .xml .json .rss
+
+Options +FollowSymLinks
+
+RewriteEngine On
+RewriteBase /~scy/val
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.* index.php

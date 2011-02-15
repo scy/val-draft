@@ -1,0 +1,195 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+@font-face {
+	font-family:'TitilliumMaps29L';
+	src:url('TitilliumMaps29L.eot?') format('eot'),url('TitilliumMaps29L.woff') format('woff'),url('TitilliumMaps29L.ttf') format('ttf'),url('TitilliumMaps29L.svg#webfontgRcwvskg') format('svg');
+}
+
+body {
+	background-color:#a3a3a3;
+	font-family:Helvetica,Arial,sans-serif;
+	font-weight:lighter;
+	font-size:15px;
+}
+
+body, a {
+	color:#2c4013;
+}
+
+a {
+	text-decoration:none;
+}
+
+div#wrapper {
+	width:729px;
+	margin:50px auto;
+}
+
+div#top, div#social, div#bottom, div.label {
+	text-transform:lowercase;
+}
+
+div#top {
+	margin:50px 0;
+}
+
+h1, h2, h1 a, h2 a {
+	font-family:'TitilliumMaps29L',sans-serif;
+	color:#261311;
+	font-weight:normal;
+}
+
+h1 {
+	font-size:60px;
+}
+
+h2 {
+	font-size:18px;
+	margin-bottom:8px;
+}
+
+h3 {
+	font-size:120%;
+	color:#fff;
+}
+
+div#langswitch, div#social {
+	font-size:13px;
+}
+
+div#social {
+	text-align:center;
+	float:right;
+	padding-bottom:10px;
+}
+
+div#langswitch, div#langswitch a, div#social, div#social a, div.label {
+	color:#fff;
+}
+
+span.delim {
+	padding:0 2em;
+}
+
+div#social span.delim {
+	padding:0 1em;
+}
+
+div#main {
+	clear:both;
+	margin-bottom:25px;
+	height:243px;
+	background-color:#8c8c8c;
+}
+
+div#left, div#right, div#social {
+	width:243px;
+}
+
+div#left, div#right, div#center {
+	height:243px;
+	overflow:auto;
+}
+
+div#left {
+	float:left;
+}
+
+div#right {
+	float:right;
+}
+
+div.label {
+	margin-top:30px;
+	padding:5px 25px;
+	float:left;
+	background-color:#8c8c8c;
+}
+
+html.rgba div.label {
+	background-color:rgba(140,140,140,0.8);
+}
+
+div.text {
+	padding:15px 10px;
+}
+
+p {
+	margin:10px 0;
+	line-height:1.2;
+}
+
+hr {
+	width:40px;
+	height:1px;
+	color:#fff;
+	background-color:#fff;
+	border:none;
+	text-align:left;
+	margin:8px auto 8px 0;
+}
+
+div#bottom {
+	font-size:16px;
+	text-align:center;
+}
+
+div#bottom span.delim {
+	font-size:130%;
+	padding:0 0.8em;
+}
+
+body.home div#center {
+	background-image:url('../../img/home00.jpg');
+}
