@@ -153,6 +153,7 @@ function go() {
 <script src="<?php echo href($file, ''); ?>"></script>
 	<?php }
 } ?>
+<script src="<?php echo href('/js/valstemarie.js', ''); ?>"></script>
 <script>
 $.each(window.valstemarie.onload, function (idx, fun) {
 	fun();
