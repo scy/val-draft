@@ -132,7 +132,7 @@ function go() {
 <div id="top">
 	<h1><a href="<?php echo href('/'); ?>">Val Sainte Marie</a></h1>
 	<h2><a href="<?php echo href('/'); ?>"><?php echo T('subtitle'); ?></a></h2>
-	<div id="langswitch"><a href="<?php echo href(null, 'de');; ?>">auf Deutsch</a><span class="delim"> | </span><a href="<?php echo href(null, 'fr'); ?>">en français</a></div>
+	<div id="langswitch"><a href="<?php echo href(null, 'de'); ?>">auf Deutsch</a><span class="delim"> | </span><a href="<?php echo href(null, 'fr'); ?>">en français</a></div>
 </div>
 <div id="middle">
 	<div id="social"><a href="">Twitter</a><span class="delim"> | </span><a href="http://www.facebook.com/group.php?gid=120928374601886">Facebook</a><span class="delim"> | </span><a href="">Flickr</a></div>
