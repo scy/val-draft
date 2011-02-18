@@ -121,6 +121,11 @@ function go() {
 	<meta http-equiv="Content-Type" value="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=800" />
 	<title><?php if (isset($title)) { echo "{$title} « "; } ?>Val Sainte Marie</title>
+	<script>
+		window.valstemarie = {
+			onload: []
+		};
+	</script>
 </head>
 <body class="<?php echo "$lang $page"; ?>"><div id="wrapper">
 <div id="top">
@@ -147,6 +152,11 @@ function go() {
 <script src="<?php echo href($file, ''); ?>"></script>
 	<?php }
 } ?>
+<script>
+$.each(window.valstemarie.onload, function (idx, fun) {
+	fun();
+});
+</script>
 </body>
 </html>
 <?php
