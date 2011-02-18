@@ -120,6 +120,7 @@ function go() {
 	} ?>
 	<meta http-equiv="Content-Type" value="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=800" />
+	<meta name="format-detection" content="telephone=no" />
 	<title><?php if (isset($title)) { echo "{$title} « "; } ?>Val Sainte Marie</title>
 	<script>
 		window.valstemarie = {
