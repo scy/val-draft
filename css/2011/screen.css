@@ -71,6 +71,11 @@ a {
 	text-decoration:none;
 }
 
+div#main a {
+	color:#fff;
+	font-style:italic;
+}
+
 div#wrapper {
 	width:729px;
 	margin:50px auto;
