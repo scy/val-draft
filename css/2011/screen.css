@@ -155,6 +155,37 @@ div#right {
 	float:right;
 }
 
+div.scroll-arrows {
+	position:absolute;
+	bottom:0px;
+	right:0px;
+	padding:6px;
+}
+
+div.scroll-arrows div {
+	width:19px;
+	height:10px;
+	background-image:url('scroll-arrows.png');
+	cursor:pointer;
+	margin:2px;
+}
+
+div.scroll-arrows div.u1 {
+	background-position:0px 0px;
+}
+
+div.scroll-arrows div.u0 {
+	background-position:0px -10px;
+}
+
+div.scroll-arrows div.d0 {
+	background-position:0px -20px;
+}
+
+div.scroll-arrows div.d1 {
+	background-position:0px -30px;
+}
+
 div.label {
 	margin-top:30px;
 	padding:5px 25px;
