@@ -34,7 +34,10 @@ window.valstemarie.fancyScroll = function (sel) {
 		}
 	};
 	var scrollHandler = function (ev, delta) {
-		var del = (delta < 0 ? (-5) : 5);
+		var del = (ev === 'touch'
+		          ? delta
+		          : (delta < 0 ? (-5) : 5)
+		          );
 		var iheight = +(inner.css('height').replace(/[^0-9.-]/g, '')) +
 		              +(inner.css('padding-bottom').replace(/[^0-9.-]/g, ''));
 		var top = +(inner.css('top').replace(/[^0-9.-]/g, ''));
@@ -59,7 +62,25 @@ window.valstemarie.fancyScroll = function (sel) {
 		}, 25));
 		scrollHandler('click', delta);
 	};
+	var getTouch = function (ev) {
+		var touches = ev.originalEvent.touches || ev.originalEvent.changedTouches;
+		return (touches.length === 1) ? touches[0] : null;
+	};
 	outer.bind('mousewheel', scrollHandler);
+	outer.bind('touchstart', function (ev) {
+		var touch = getTouch(ev);
+		if (!touch) { return; }
+		outer.data('touchOffset', touch.pageY);
+		return false;
+	});
+	outer.bind('touchmove', function (ev) {
+		var touch = getTouch(ev);
+		if (!touch) { return; }
+		var diff = touch.pageY - outer.data('touchOffset');
+		outer.data('touchOffset', touch.pageY);
+		scrollHandler('touch', diff);
+		return false;
+	});
 	$("> div", arrows).mousedown(function (ev) { return mouseDown($(this)); });
 	$("> div", arrows).bind('touchstart', function (ev) { return mouseDown($(this)); });
 	$("> div", arrows).mouseup(function (ev) { return mouseUp($(this)); });
