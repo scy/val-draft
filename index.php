@@ -147,6 +147,7 @@ function go() {
 </div>
 <script src="<?php echo href('/js/modernizr-1.6.min.js', ''); ?>"></script>
 <script src="<?php echo href('/js/jquery-1.5.min.js', ''); ?>"></script>
+<script src="<?php echo href('/js/jquery.mousewheel.min.js', ''); ?>"></script>
 <?php if (is_array($morejs)) {
 	foreach ($morejs as $file) { ?>
 <script src="<?php echo href($file, ''); ?>"></script>
