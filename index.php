@@ -105,6 +105,7 @@ function T($key) {
 
 function go() {
 	global $basedir, $path, $lang;
+	global $morecss, $morejs;
 	global $title;
 	global $page, $left, $right, $center;
 ?>
@@ -112,6 +113,11 @@ function go() {
 <html class="no-js">
 <head>
 	<link rel="stylesheet" href="<?php echo href('/css/2011/screen.css', ''); ?>" />
+	<?php if (is_array($morecss)) {
+		foreach ($morecss as $file) { ?>
+	<link rel="stylesheet" href="<?php echo href($file, ''); ?>" />
+		<?php }
+	} ?>
 	<meta http-equiv="Content-Type" value="text/html;charset=utf-8" />
 	<meta name="viewport" content="width=800" />
 	<title><?php if (isset($title)) { echo "{$title} « "; } ?>Val Sainte Marie</title>
@@ -136,6 +142,11 @@ function go() {
 </div>
 <script src="<?php echo href('/js/modernizr-1.6.min.js', ''); ?>"></script>
 <script src="<?php echo href('/js/jquery-1.5.min.js', ''); ?>"></script>
+<?php if (is_array($morejs)) {
+	foreach ($morejs as $file) { ?>
+<script src="<?php echo href($file, ''); ?>"></script>
+	<?php }
+} ?>
 </body>
 </html>
 <?php
