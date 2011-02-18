@@ -61,7 +61,9 @@ window.valstemarie.fancyScroll = function (sel) {
 	};
 	outer.bind('mousewheel', scrollHandler);
 	$("> div", arrows).mousedown(function (ev) { return mouseDown($(this)); });
+	$("> div", arrows).bind('touchstart', function (ev) { return mouseDown($(this)); });
 	$("> div", arrows).mouseup(function (ev) { return mouseUp($(this)); });
+	$("> div", arrows).bind('touchend', function (ev) { return mouseUp($(this)); });
 	scrollHandler(null, 1);
 };
 $.each(['#left', '#center', '#right'], function (idx, sel) {
