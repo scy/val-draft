@@ -15,4 +15,12 @@ $right = text('
 	<br />
 	Atiur? Quibus etum qui dolorum e
 </p>
+<hr />
+<p>
+	Volorit imporis assed expeles enist voluptatur?
+	<br />
+	Turenimet pre porest, veliquosa pos si aut maionse rferuptatur? Occatesed modit es ute officatis del ilit, sunt, optas alic tota cus.
+	<br />
+	Atiur? Quibus etum qui dolorum e
+</p>
 ');
