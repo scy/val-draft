@@ -33,6 +33,8 @@ $codes = array(
 	500 => 'Internal Server Error',
 );
 
+date_default_timezone_set('Europe/Berlin'); // Screw you, PHP!
+
 $basedir = dirname($_SERVER['PHP_SELF']);
 $doesmatch = preg_match("#$basedir/(de|fr)(|/.*)$#", $_SERVER['REQUEST_URI'], $matches);
 if (!$doesmatch) {
