@@ -36,12 +36,13 @@ $codes = array(
 date_default_timezone_set('Europe/Berlin'); // Screw you, PHP!
 
 $basedir = dirname($_SERVER['PHP_SELF']);
-$doesmatch = preg_match("#$basedir/(de|fr)(|/.*)$#", $_SERVER['REQUEST_URI'], $matches);
+$doesmatch = preg_match("#$basedir/(de|fr)(|/[^?]*)(?:\\?(.*))?$#", $_SERVER['REQUEST_URI'], $matches);
 if (!$doesmatch) {
 	redirect('/', 'de');
 }
 $lang = $matches[1];
 $path = $matches[2];
+$query = $matches[3];
 $source = preg_replace(array('#[^a-zA-Z0-9/]#', '#/#'), array('', '_'), trim($path, '/'));
 $source = './pages/' . ($source == '' ? 'home' : $source) . '.php';
 
