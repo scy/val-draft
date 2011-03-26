@@ -229,3 +229,59 @@ div#bottom span.delim {
 body.home div#center {
 	background-image:url('../../img/home00.jpg');
 }
+
+body.booking div#right {
+	background-color:#2c4013;
+	color:#fff;
+}
+
+div#calendar {
+	position:relative;
+}
+
+div#calendar div.tableWrapper {
+	position:absolute;
+	right:10px;
+	top:0;
+}
+
+div#calendarNav {
+	margin-top:5px;
+	text-align:center;
+	font-size:110%;
+}
+
+div#calendar table {
+	border-collapse:collapse;
+}
+
+div#calendar th {
+	text-align:center;
+	padding:4px 0;
+	width:40px;
+	color:#fff;
+}
+
+div#calendar td {
+	text-align:left;
+	padding:4px 4px 9px 4px;
+	background-color:#a6a6a6;
+	border:2px solid #8c8c8c;
+	color:#fff;
+}
+
+div#calendar td.occupied {
+	background-color:#2c4013;
+}
+
+div#calendar td.occupiedByUs {
+	background-color:#688248;
+}
+
+div#calendar td.closed {
+	background-color:#666;
+}
+
+div#calendar td.passivemonth {
+	opacity:0.3;
+}
